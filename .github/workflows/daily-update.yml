@@ -13,8 +13,8 @@ permissions:
 
 # Make prefixes for this repo
 env:
-  FILTER_PREFIX: Make-
-  SIGNAL_PREFIX: MAKE
+  FILTER_PREFIX: Buick-
+  SIGNAL_PREFIX: BUICK
 
 concurrency:
   group: "data-update"
