@@ -149,7 +149,7 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1171"}, "freq": 1,
   "signals": [
-    {"id": "BUICK_EGR_DUTY_V2", "path": "Engine", "fmt": { "len": 8, "max": 100, "div": 2.55, "unit": "percent" }, "name": "Exhaust gas recirculation duty cycle"}
+    {"id": "BUICK_EGR_DUTY", "path": "Engine", "fmt": { "len": 8, "max": 100, "div": 2.55, "unit": "percent" }, "name": "Exhaust gas recirculation duty cycle"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1172"}, "freq": 1,
   "signals": [
@@ -177,11 +177,11 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "fcm1": true, "dbg": true, "cmd": {"22": "1197"}, "freq": 1,
   "signals": [
-    {"id": "BUICK_FUEL_INJECTION_C5_V2", "path": "Fuel", "fmt": { "len": 16, "max": 1000, "mul": 1000, "div": 65535, "unit": "milliseconds" }, "name": "Fuel injection, cylinder 5"}
+    {"id": "BUICK_FUEL_INJECTION_C5", "path": "Fuel", "fmt": { "len": 16, "max": 1000, "mul": 1000, "div": 65535, "unit": "milliseconds" }, "name": "Fuel injection, cylinder 5"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "fcm1": true, "dbg": true, "cmd": {"22": "1198"}, "freq": 1,
   "signals": [
-    {"id": "BUICK_FUEL_INJECTION_C6_V2", "path": "Fuel", "fmt": { "len": 16, "max": 1000, "mul": 1000, "div": 65535, "unit": "milliseconds" }, "name": "Fuel injection, cylinder 6"}
+    {"id": "BUICK_FUEL_INJECTION_C6", "path": "Fuel", "fmt": { "len": 16, "max": 1000, "mul": 1000, "div": 65535, "unit": "milliseconds" }, "name": "Fuel injection, cylinder 6"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1199"}, "freq": 1,
   "signals": [
@@ -205,35 +205,35 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "11EA"}, "freq": 1,
   "signals": [
-    {"id": "BUICK_MISFIRES_C5_CUR_V2", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfires, current, cylinder 5"}
+    {"id": "BUICK_MISFIRES_C5_CUR", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfires, current, cylinder 5"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "11EB"}, "freq": 1,
   "signals": [
-    {"id": "BUICK_MISFIRES_C6_CUR_V2", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfires, current, cylinder 6"}
+    {"id": "BUICK_MISFIRES_C6_CUR", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfires, current, cylinder 6"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "11EC"}, "freq": 1,
   "signals": [
-    {"id": "BUICK_MIS_CURRENT_7", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfire current, cylinder 7"}
+    {"id": "BUICK_MIS_CNT_7", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfire current, cylinder 7"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "11ED"}, "freq": 1,
   "signals": [
-    {"id": "BUICK_MIS_CURRENT_8", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfire current, cylinder 8"}
+    {"id": "BUICK_MIS_CNT_8", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfire current, cylinder 8"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "11F8"}, "freq": 1,
   "signals": [
-    {"id": "BUICK_MIS_HISTORY_5_V2", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 5"}
+    {"id": "BUICK_MIS_HISTORY_5", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 5"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "11F9"}, "freq": 1,
   "signals": [
-    {"id": "BUICK_MIS_HISTORY_6_V2", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 6"}
+    {"id": "BUICK_MIS_HISTORY_6", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 6"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "11FA"}, "freq": 1,
   "signals": [
-    {"id": "BUICK_MIS_HISTORY_7_V2", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 7"}
+    {"id": "BUICK_MIS_HIST_7", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 7"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "11FB"}, "freq": 1,
   "signals": [
-    {"id": "BUICK_MIS_HISTORY_8_V2", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 8"}
+    {"id": "BUICK_MIS_HIST_8", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 8"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1200"}, "freq": 1,
   "signals": [
@@ -285,7 +285,7 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "129A"}, "freq": 1,
   "signals": [
-    {"id": "BUICK_INJ_WIDTH_CYL_8_V2", "path": "Engine", "fmt": { "len": 16, "max": 1000, "div": 65.535, "unit": "milliseconds" }, "name": "Injector pulse width, cylinder 8"}
+    {"id": "BUICK_INJ_WIDTH_CYL_8_7E0", "path": "Engine", "fmt": { "len": 16, "max": 1000, "div": 65.535, "unit": "milliseconds" }, "name": "Injector pulse width, cylinder 8"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "12C3"}, "freq": 1,
   "signals": [
@@ -293,7 +293,7 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "12C4"}, "freq": 1,
   "signals": [
-    {"id": "BUICK_INJECTOR_DUTY_CYCLE_BANK_2_V2", "path": "Engine", "fmt": { "len": 16, "max": 983.025, "mul": 150, "div": 10000, "unit": "milliseconds" }, "name": "Injector duty cycle bank 2"}
+    {"id": "BUICK_INJECTOR_DUTY_CYCLE_BANK_2", "path": "Engine", "fmt": { "len": 16, "max": 983.025, "mul": 150, "div": 10000, "unit": "milliseconds" }, "name": "Injector duty cycle bank 2"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "12D9"}, "freq": 1,
   "signals": [
@@ -317,9 +317,9 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "fcm1": true, "dbg": true, "cmd": {"22": "153E"}, "freq": 5,
   "signals": [
-    {"id": "BUICK_EOT_DA11", "path": "Engine", "fmt": { "len": 8, "max": 215,             "add": -40,                 "unit": "celsius" }, "name": "Engine oil temperature"},
+    {"id": "BUICK_EOT_2",    "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "nullmin": -40, "unit": "celsius" }, "name": "Engine oil temperature 2"},
     {"id": "BUICK_EOT_ALT",  "path": "Engine", "fmt": { "len": 8, "max": 215,             "add": -40,                 "unit": "celsius" }, "name": "Engine oil temperature",   "suggestedMetric": "engineOilTemperature"},
-    {"id": "BUICK_EOT_2_V2", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "nullmin": -40, "unit": "celsius" }, "name": "Engine oil temperature 2"}
+    {"id": "BUICK_EOT_DA11", "path": "Engine", "fmt": { "len": 8, "max": 215,             "add": -40,                 "unit": "celsius" }, "name": "Engine oil temperature"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1564"}, "freq": 1,
   "signals": [
@@ -344,24 +344,24 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1633"}, "freq": 1,
   "signals": [
-    {"id": "BUICK_BALANCE_RATE_CYL_5_V2", "path": "Engine", "fmt": { "len": 16, "max": 511, "min": -512, "div": 64, "add": -512, "unit": "scalar" }, "name": "Balance rate, cylinder 5"}
+    {"id": "BUICK_BALANCE_RATE_CYL_5", "path": "Engine", "fmt": { "len": 16, "max": 511, "min": -512, "div": 64, "add": -512, "unit": "scalar" }, "name": "Balance rate, cylinder 5"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1634"}, "freq": 1,
   "signals": [
-    {"id": "BUICK_BALANCE_RATE_CYL_6_V2", "path": "Engine", "fmt": { "len": 16, "max": 511, "min": -512, "div": 64, "add": -512, "unit": "scalar" }, "name": "Balance rate, cylinder 6"}
+    {"id": "BUICK_BALANCE_RATE_CYL_6", "path": "Engine", "fmt": { "len": 16, "max": 511, "min": -512, "div": 64, "add": -512, "unit": "scalar" }, "name": "Balance rate, cylinder 6"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1635"}, "freq": 1,
   "signals": [
-    {"id": "BUICK_BALANCE_RATE_CYL_7_V2", "path": "Engine", "fmt": { "len": 16, "max": 511, "min": -512, "div": 64, "add": -512, "unit": "scalar" }, "name": "Balance rate, cylinder 7"}
+    {"id": "BUICK_BALANCE_RATE_CYL_7_7E0", "path": "Engine", "fmt": { "len": 16, "max": 511, "min": -512, "div": 64, "add": -512, "unit": "scalar" }, "name": "Balance rate, cylinder 7"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1636"}, "freq": 1,
   "signals": [
-    {"id": "BUICK_BALANCE_RATE_CYL_8_V2", "path": "Engine", "fmt": { "len": 16, "max": 511, "min": -512, "div": 64, "add": -512, "unit": "scalar" }, "name": "Balance rate, cylinder 8"}
+    {"id": "BUICK_BALANCE_RATE_CYL_8_7E0", "path": "Engine", "fmt": { "len": 16, "max": 511, "min": -512, "div": 64, "add": -512, "unit": "scalar" }, "name": "Balance rate, cylinder 8"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1940"}, "freq": 5,
   "signals": [
-    {"id": "BUICK_ATF_T_VAR_1",      "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 1", "suggestedMetric": "transmissionFluidTemperature"},
-    {"id": "BUICK_2500_ATF_T_VAR_1", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 1"}
+    {"id": "BUICK_ATF_T_VAR_1",     "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 1", "suggestedMetric": "transmissionFluidTemperature"},
+    {"id": "BUICK_ATF_T_VAR_1_7E0", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 1"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1991"}, "freq": 0.25,
   "signals": [
@@ -453,7 +453,7 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "fcm1": true, "dbg": true, "cmd": {"22": "20B3"}, "freq": 1,
   "signals": [
-    {"id": "BUICK_FUEL_INJECTION_C8_V2", "path": "Fuel", "fmt": { "len": 16, "max": 65.535, "mul": 10, "div": 10000, "unit": "milliseconds" }, "name": "Fuel injection, cylinder 8"}
+    {"id": "BUICK_FUEL_INJECTION_C8_7E0", "path": "Fuel", "fmt": { "len": 16, "max": 65.535, "mul": 10, "div": 10000, "unit": "milliseconds" }, "name": "Fuel injection, cylinder 8"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "20D0"}, "freq": 1,
   "signals": [
@@ -473,8 +473,8 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "2345"}, "freq": 1,
   "signals": [
-    {"id": "BUICK_EOP",     "path": "Engine", "fmt": { "len": 8, "max": 1020, "mul": 400, "div": 100, "unit": "kilopascal" }, "name": "Engine oil pressure"},
-    {"id": "BUICK_EOP_ACT", "path": "Engine", "fmt": { "len": 8, "max": 1020, "mul": 4,               "unit": "kilopascal" }, "name": "Engine oil pressure, actual"}
+    {"id": "BUICK_EOP",         "path": "Engine", "fmt": { "len": 8, "max": 1020, "mul": 400, "div": 100, "unit": "kilopascal" }, "name": "Engine oil pressure"},
+    {"id": "BUICK_EOP_ACT_7E0", "path": "Engine", "fmt": { "len": 8, "max": 1020, "mul": 4,               "unit": "kilopascal" }, "name": "Engine oil pressure, actual"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "2364"}, "freq": 1,
   "signals": [
@@ -688,7 +688,8 @@
   ]},
 { "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "280D"}, "freq": 5,
   "signals": [
-    {"id": "BUICK_ATF_T_VAR_8_V2", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 8"}
+    {"id": "BUICK_ATF_T_VAR_8_7E1", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 8"},
+    {"id": "BUICK_ATF_T_VAR_8_V2",  "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 8", "suggestedMetric": "transmissionFluidTemperature"}
   ]},
 { "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "2810"}, "freq": 0.25,
   "signals": [
@@ -1935,7 +1936,7 @@
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "1171"}, "freq": 1,
   "signals": [
-    {"id": "BUICK_EGR_DUTY", "path": "Engine", "fmt": { "len": 8, "max": 100, "div": 2.55, "unit": "percent" }, "name": "Exhaust gas recirculation duty cycle"}
+    {"id": "BUICK_EGR_DUTY_V2", "path": "Engine", "fmt": { "len": 8, "max": 100, "div": 2.55, "unit": "percent" }, "name": "Exhaust gas recirculation duty cycle"}
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "1172"}, "freq": 1,
   "signals": [
@@ -1963,11 +1964,11 @@
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "1197"}, "freq": 1,
   "signals": [
-    {"id": "BUICK_FUEL_INJECTION_C5", "path": "Fuel", "fmt": { "len": 16, "max": 1000, "mul": 1000, "div": 65535, "unit": "milliseconds" }, "name": "Fuel injection, cylinder 5"}
+    {"id": "BUICK_FUEL_INJECTION_C5_V2", "path": "Fuel", "fmt": { "len": 16, "max": 1000, "mul": 1000, "div": 65535, "unit": "milliseconds" }, "name": "Fuel injection, cylinder 5"}
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "1198"}, "freq": 1,
   "signals": [
-    {"id": "BUICK_FUEL_INJECTION_C6", "path": "Fuel", "fmt": { "len": 16, "max": 1000, "mul": 1000, "div": 65535, "unit": "milliseconds" }, "name": "Fuel injection, cylinder 6"}
+    {"id": "BUICK_FUEL_INJECTION_C6_V2", "path": "Fuel", "fmt": { "len": 16, "max": 1000, "mul": 1000, "div": 65535, "unit": "milliseconds" }, "name": "Fuel injection, cylinder 6"}
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "1199"}, "freq": 1,
   "signals": [
@@ -1995,13 +1996,13 @@
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "11EA"}, "freq": 1,
   "signals": [
-    {"id": "BUICK_MISFIRES_C5_CUR", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Misfires, current, cylinder 5"},
-    {"id": "BUICK_MIS_CURRENT_5",   "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 20,  "div": 51,  "unit": "percent" }, "name": "Misfires current, cylinder 5"}
+    {"id": "BUICK_MISFIRES_C5_CUR_V2", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Misfires, current, cylinder 5"},
+    {"id": "BUICK_MIS_CURRENT_5",      "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 20,  "div": 51,  "unit": "percent" }, "name": "Misfires current, cylinder 5"}
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "11EB"}, "freq": 1,
   "signals": [
-    {"id": "BUICK_MISFIRES_C6_CUR", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Misfires, current, cylinder 6"},
-    {"id": "BUICK_MIS_CURRENT_6",   "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 20,  "div": 51,  "unit": "percent" }, "name": "Misfires current, cylinder 6"}
+    {"id": "BUICK_MISFIRES_C6_CUR_V2", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Misfires, current, cylinder 6"},
+    {"id": "BUICK_MIS_CURRENT_6",      "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 20,  "div": 51,  "unit": "percent" }, "name": "Misfires current, cylinder 6"}
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "11EC"}, "freq": 1,
   "signals": [
@@ -2015,11 +2016,11 @@
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "11F8"}, "freq": 1,
   "signals": [
-    {"id": "BUICK_MIS_HISTORY_5", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 5"}
+    {"id": "BUICK_MIS_HISTORY_5_V2", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 5"}
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "11F9"}, "freq": 1,
   "signals": [
-    {"id": "BUICK_MIS_HISTORY_6", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 6"}
+    {"id": "BUICK_MIS_HISTORY_6_V2", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire history, cylinder 6"}
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "11FA"}, "freq": 1,
   "signals": [
@@ -2091,7 +2092,7 @@
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "12C4"}, "freq": 1,
   "signals": [
-    {"id": "BUICK_INJECTOR_DUTY_CYCLE_BANK_2", "path": "Engine", "fmt": { "len": 16, "max": 983.025, "mul": 150, "div": 10000, "unit": "milliseconds" }, "name": "Injector duty cycle bank 2"}
+    {"id": "BUICK_INJECTOR_DUTY_CYCLE_BANK_2_V2", "path": "Engine", "fmt": { "len": 16, "max": 983.025, "mul": 150, "div": 10000, "unit": "milliseconds" }, "name": "Injector duty cycle bank 2"}
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "12D9"}, "freq": 1,
   "signals": [
@@ -2112,7 +2113,7 @@
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "153E"}, "freq": 1,
   "signals": [
-    {"id": "BUICK_EOT_2",      "path": "Engine", "fmt": { "len": 8, "max": 215,             "add": -40, "unit": "celsius" }, "name": "Engine oil temperature"},
+    {"id": "BUICK_EOT_2_V2",   "path": "Engine", "fmt": { "len": 8, "max": 215,             "add": -40, "unit": "celsius" }, "name": "Engine oil temperature"},
     {"id": "BUICK_EOT_V3",     "path": "Engine", "fmt": { "len": 8, "max": 215,             "add": -40, "unit": "celsius" }, "name": "Engine oil temperature", "suggestedMetric": "engineOilTemperature"},
     {"id": "BUICK_EOT_DA11_3", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Engine oil temperature"}
   ]},
@@ -2138,11 +2139,11 @@
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "1633"}, "freq": 1,
   "signals": [
-    {"id": "BUICK_BALANCE_RATE_CYL_5", "path": "Engine", "fmt": { "len": 16, "max": 511, "min": -512, "div": 64, "add": -512, "unit": "scalar" }, "name": "Balance rate, cylinder 5"}
+    {"id": "BUICK_BALANCE_RATE_CYL_5_V2", "path": "Engine", "fmt": { "len": 16, "max": 511, "min": -512, "div": 64, "add": -512, "unit": "scalar" }, "name": "Balance rate, cylinder 5"}
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "1634"}, "freq": 1,
   "signals": [
-    {"id": "BUICK_BALANCE_RATE_CYL_6", "path": "Engine", "fmt": { "len": 16, "max": 511, "min": -512, "div": 64, "add": -512, "unit": "scalar" }, "name": "Balance rate, cylinder 6"}
+    {"id": "BUICK_BALANCE_RATE_CYL_6_V2", "path": "Engine", "fmt": { "len": 16, "max": 511, "min": -512, "div": 64, "add": -512, "unit": "scalar" }, "name": "Balance rate, cylinder 6"}
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "1635"}, "freq": 1,
   "signals": [
@@ -2273,7 +2274,7 @@
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "2345"}, "freq": 1,
   "signals": [
-    {"id": "BUICK_EOP_ACT_V2", "path": "Engine", "fmt": { "len": 8, "max": 1020, "mul": 4, "unit": "kilopascal" }, "name": "Engine oil pressure"}
+    {"id": "BUICK_EOP_ACT", "path": "Engine", "fmt": { "len": 8, "max": 1020, "mul": 4, "unit": "kilopascal" }, "name": "Engine oil pressure"}
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "248E"}, "freq": 15,
   "signals": [
