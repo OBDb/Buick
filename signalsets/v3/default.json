@@ -1856,10 +1856,20 @@
     {"id": "BUICK_BECM_AVG_CELL_V", "path": "Battery", "fmt": { "len": 16, "max": 4.99, "mul": 5, "div": 65536, "unit": "volts" }, "name": "Battery average cell voltage"},
     {"id": "BUICK_BAT_CELL_AVG_V",  "path": "Engine",  "fmt": { "len": 16, "max": 5,              "div": 13107, "unit": "volts" }, "name": "Battery cell average voltage"}
   ]},
+{ "hdr": "DA11", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "11EA"}, "freq": 1,
+  "signals": [
+    {"id": "BUICK_MISFIRES_C5_CUR_V2", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Misfires, current, cylinder 5"},
+    {"id": "BUICK_MIS_CURRENT_5",      "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 20,  "div": 51,  "unit": "percent" }, "name": "Misfires current, cylinder 5"}
+  ]},
+{ "hdr": "DA11", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "11EB"}, "freq": 1,
+  "signals": [
+    {"id": "BUICK_MISFIRES_C6_CUR_V2", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Misfires, current, cylinder 6"},
+    {"id": "BUICK_MIS_CURRENT_6",      "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 20,  "div": 51,  "unit": "percent" }, "name": "Misfires current, cylinder 6"}
+  ]},
 { "hdr": "DA11", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "34D8"}, "freq": 1,
   "signals": [
-    {"id": "BUICK_DPF_PRES",  "path": "Engine", "fmt": { "len": 16, "max": 327.67, "min": -327.68, "mul": 100, "div": 10000, "sign": true, "unit": "kilopascal" }, "name": "Diesel particulate filter, pressure"},
-    {"id": "BUICK_DPF_PRESS", "path": "Engine", "fmt": { "len": 16, "max": 655.35,                 "mul": 100, "div": 10000,               "unit": "kilopascal" }, "name": "Particulate filter pressure"}
+    {"id": "BUICK_DPF_PRESS", "path": "Engine", "fmt": { "len": 16, "max": 655.35,                 "mul": 100, "div": 10000,               "unit": "kilopascal" }, "name": "Particulate filter pressure"},
+    {"id": "BUICK_DPF_PRES",  "path": "Engine", "fmt": { "len": 16, "max": 327.67, "min": -327.68, "mul": 100, "div": 10000, "sign": true, "unit": "kilopascal" }, "name": "Diesel particulate filter, pressure"}
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "000D"}, "freq": 0.25,
   "signals": [
@@ -1990,16 +2000,6 @@
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "11A6"}, "freq": 1,
   "signals": [
     {"id": "BUICK_KNOCK_RETARD_V2", "path": "Engine", "fmt": { "len": 8, "max": 56.1, "mul": 22, "div": 100, "unit": "degrees" }, "name": "Knock retard"}
-  ]},
-{ "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "11EA"}, "freq": 1,
-  "signals": [
-    {"id": "BUICK_MISFIRES_C5_CUR_V2", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Misfires, current, cylinder 5"},
-    {"id": "BUICK_MIS_CURRENT_5",      "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 20,  "div": 51,  "unit": "percent" }, "name": "Misfires current, cylinder 5"}
-  ]},
-{ "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "11EB"}, "freq": 1,
-  "signals": [
-    {"id": "BUICK_MISFIRES_C6_CUR_V2", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Misfires, current, cylinder 6"},
-    {"id": "BUICK_MIS_CURRENT_6",      "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 20,  "div": 51,  "unit": "percent" }, "name": "Misfires current, cylinder 6"}
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "11EC"}, "freq": 1,
   "signals": [
