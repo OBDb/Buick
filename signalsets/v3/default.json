@@ -89,8 +89,8 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0042"}, "freq": 5,
   "signals": [
-    {"id": "BUICK_M_CTRL_MODULE_V", "path": "Battery", "fmt": { "len": 16, "max": 65.53, "div": 1000, "unit": "volts" }, "name": "M control module voltage", "suggestedMetric": "starterBatteryVoltage"},
-    {"id": "BUICK_CTRL_MODULE_V",   "path": "Engine",  "fmt": { "len": 16, "max": 65.53, "div": 1000, "unit": "volts" }, "name": "Control module voltage"}
+    {"id": "BUICK_M_CTRL_MODULE_V",       "path": "Battery", "fmt": { "len": 16, "max": 65.53, "div": 1000, "unit": "volts" }, "name": "M control module voltage", "suggestedMetric": "starterBatteryVoltage"},
+    {"id": "BUICK_CARGO_M_CTRL_MODULE_V", "path": "Battery", "fmt": { "len": 16, "max": 65.53, "div": 1000, "unit": "volts" }, "name": "Control module voltage"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0052"}, "freq": 1,
   "signals": [
@@ -465,7 +465,8 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "232C"}, "freq": 5,
   "signals": [
-    {"id": "BUICK_AIR_TEMP_AMBIENT_2", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "nullmin": -40, "nullmax": 214, "unit": "celsius" }, "name": "Ambient air temperature 2"}
+    {"id": "BUICK_AIR_TEMP_AMBIENT_2",       "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "nullmin": -40, "nullmax": 214, "unit": "celsius" }, "name": "Ambient air temperature 2"},
+    {"id": "BUICK_CARGO_AIR_TEMP_AMBIENT_2", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40,                                 "unit": "celsius" }, "name": "Ambient air temperature 2"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "2344"}, "freq": 1,
   "signals": [
@@ -1888,7 +1889,7 @@
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "0042"}, "freq": 5,
   "signals": [
-    {"id": "BUICK_CTRL_MODULE_V_V2", "path": "Battery", "fmt": { "len": 16, "max": 65.53, "div": 1000, "unit": "volts" }, "name": "Control module voltage", "suggestedMetric": "starterBatteryVoltage"}
+    {"id": "BUICK_CTRL_MODULE_V", "path": "Battery", "fmt": { "len": 16, "max": 65.53, "div": 1000, "unit": "volts" }, "name": "Control module voltage", "suggestedMetric": "starterBatteryVoltage"}
   ]},
 { "hdr": "DA11", "rax": "2AF111", "pri": "14", "fcm1": true, "dbg": true, "cmd": {"22": "0052"}, "freq": 1,
   "signals": [
@@ -2547,23 +2548,23 @@
   ]},
 { "hdr": "DA40", "rax": "40", "dbg": true, "cmd": {"22": "5005"}, "freq": 15,
   "signals": [
-    {"id": "BUICK_TP_FL_DA40",      "path": "Tires", "fmt": { "len": 16, "max": 4095.9375, "div": 16,               "unit": "kilopascal" }, "name": "Front left tire pressure", "suggestedMetric": "frontLeftTirePressure"},
-    {"id": "BUICK_2500_TP_FL_DA40", "path": "Tires", "fmt": { "len": 16, "max": 4095.9375, "div": 16, "nullmin": 0, "unit": "kilopascal" }, "name": "Front left tire pressure", "suggestedMetric": "frontLeftTirePressure"}
+    {"id": "BUICK_TP_FL_DA40",       "path": "Tires", "fmt": { "len": 16, "max": 4095.9375, "div": 16,               "unit": "kilopascal" }, "name": "Front left tire pressure", "suggestedMetric": "frontLeftTirePressure"},
+    {"id": "BUICK_CARGO_TP_FL_DA40", "path": "Tires", "fmt": { "len": 16, "max": 4095.9375, "div": 16, "nullmin": 0, "unit": "kilopascal" }, "name": "Front left tire pressure", "suggestedMetric": "frontLeftTirePressure"}
   ]},
 { "hdr": "DA40", "rax": "40", "dbg": true, "cmd": {"22": "5006"}, "freq": 15,
   "signals": [
-    {"id": "BUICK_TP_FR_DA40",      "path": "Tires", "fmt": { "len": 16, "max": 4095.9375, "div": 16,               "unit": "kilopascal" }, "name": "Front right tire pressure", "suggestedMetric": "frontRightTirePressure"},
-    {"id": "BUICK_2500_TP_FR_DA40", "path": "Tires", "fmt": { "len": 16, "max": 4095.9375, "div": 16, "nullmin": 0, "unit": "kilopascal" }, "name": "Front right tire pressure", "suggestedMetric": "frontRightTirePressure"}
+    {"id": "BUICK_TP_FR_DA40",       "path": "Tires", "fmt": { "len": 16, "max": 4095.9375, "div": 16,               "unit": "kilopascal" }, "name": "Front right tire pressure", "suggestedMetric": "frontRightTirePressure"},
+    {"id": "BUICK_CARGO_TP_FR_DA40", "path": "Tires", "fmt": { "len": 16, "max": 4095.9375, "div": 16, "nullmin": 0, "unit": "kilopascal" }, "name": "Front right tire pressure", "suggestedMetric": "frontRightTirePressure"}
   ]},
 { "hdr": "DA40", "rax": "40", "dbg": true, "cmd": {"22": "5007"}, "freq": 15,
   "signals": [
-    {"id": "BUICK_TP_RR_DA40",      "path": "Tires", "fmt": { "len": 16, "max": 4095.9375, "div": 16,               "unit": "kilopascal" }, "name": "Rear right tire pressure", "suggestedMetric": "rearRightTirePressure"},
-    {"id": "BUICK_2500_TP_RR_DA40", "path": "Tires", "fmt": { "len": 16, "max": 4095.9375, "div": 16, "nullmin": 0, "unit": "kilopascal" }, "name": "Rear right tire pressure", "suggestedMetric": "rearRightTirePressure"}
+    {"id": "BUICK_TP_RR_DA40",       "path": "Tires", "fmt": { "len": 16, "max": 4095.9375, "div": 16,               "unit": "kilopascal" }, "name": "Rear right tire pressure", "suggestedMetric": "rearRightTirePressure"},
+    {"id": "BUICK_CARGO_TP_RR_DA40", "path": "Tires", "fmt": { "len": 16, "max": 4095.9375, "div": 16, "nullmin": 0, "unit": "kilopascal" }, "name": "Rear right tire pressure", "suggestedMetric": "rearRightTirePressure"}
   ]},
 { "hdr": "DA40", "rax": "40", "dbg": true, "cmd": {"22": "5008"}, "freq": 15,
   "signals": [
-    {"id": "BUICK_TP_RL_DA40",      "path": "Tires", "fmt": { "len": 16, "max": 4095.9375, "div": 16,               "unit": "kilopascal" }, "name": "Rear left tire pressure", "suggestedMetric": "rearLeftTirePressure"},
-    {"id": "BUICK_2500_TP_RL_DA40", "path": "Tires", "fmt": { "len": 16, "max": 4095.9375, "div": 16, "nullmin": 0, "unit": "kilopascal" }, "name": "Rear left tire pressure", "suggestedMetric": "rearLeftTirePressure"}
+    {"id": "BUICK_TP_RL_DA40",       "path": "Tires", "fmt": { "len": 16, "max": 4095.9375, "div": 16,               "unit": "kilopascal" }, "name": "Rear left tire pressure", "suggestedMetric": "rearLeftTirePressure"},
+    {"id": "BUICK_CARGO_TP_RL_DA40", "path": "Tires", "fmt": { "len": 16, "max": 4095.9375, "div": 16, "nullmin": 0, "unit": "kilopascal" }, "name": "Rear left tire pressure", "suggestedMetric": "rearLeftTirePressure"}
   ]},
 { "hdr": "DACB", "dbg": true, "cmd": {"22": "27C6"}, "freq": 0.5,
   "signals": [
